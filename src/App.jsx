@@ -5,7 +5,7 @@ import AddMovie from './components/AddMovie';
 import {Route, Routes} from 'react-router-dom';
 import Detail from './components/Detail';
 
-import { createContext, useEffect, useState } from "react";
+import { createContext,  useState } from "react";
 import Login from './components/Login'
 import Signup from './components/Signup'
 

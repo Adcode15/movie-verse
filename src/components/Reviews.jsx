@@ -72,7 +72,7 @@ const Reviews = ({id, prevRating, userRated}) => {
             setReviewsLoading(false);
         }
         getData();
-    },[newAdded])
+    },[newAdded,id])
 
   return (
     <div className='mt-4 border-t-2 border-gray-700 w-full'>
@@ -86,7 +86,7 @@ const Reviews = ({id, prevRating, userRated}) => {
             value={form}
             onChange={(e) => setForm(e.target.value)}
             placeholder='Share Your thoughts...'
-            className='w-full p-2 outline-none header'
+            className='w-full p-2 outline-none header text-black'
         />
         <button onClick={sendReview} className='bg-green-600 flex justify-center w-full p-2'>
             {loading ? <TailSpin height={20} color="white" /> : 'Share'}
